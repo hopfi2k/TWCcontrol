@@ -84,6 +84,7 @@ This can save around 6kWh per month when used to track a local green energy sour
 All installation documentation (Physical and Software) is contained in the documentation repository [here](docs/README.md)
 
 # Attribution
+* Forked from [ngardiner](https://github.com/ngardiner/TWCManager)
 * Original TWCManager distribution by [cdragon](https://github.com/cdragon/TWCManager)
    * The effort by @cdragon cannot be understated, if you would like to read more about the intense hardware hacking that was done to make this project a reality, read this [thread](https://teslamotorsclub.com/tmc/threads/new-wall-connector-load-sharing-protocol.72830).
 * Integrated improvements from [flodom's](https://github.com/flodorn/TWCManager) TWCManager fork. 
