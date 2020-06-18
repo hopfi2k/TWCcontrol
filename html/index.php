@@ -22,15 +22,18 @@
     header('Last-Modified: ' . gmdate("D, d M Y H:i:s") . 'GMT');
     header('Cache-Control: no-cache, must-revalidate');
     header('Pragma: no-cache');
-?><!DOCTYPE html>
-<html>
-<head>
-    <title>TWCManager</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+?>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <?php /* This tag makes the page fill a mobile phone screen. */ ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+        <link rel="icon" type="image/png" href="favicon.png">
+
+        <title>TWCManager</title>
+    </head>
 <body>
 <?php
     // Initialize Interprocess Communication message queue for sending commands to

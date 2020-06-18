@@ -48,7 +48,7 @@ class RS485:
         return self.ser.close()
 
     def getBufferLen(self):
-        # This function returns the size of the recieve buffer.
+        # This function returns the size of the receive buffer.
         # This is used by read functions to determine if information is waiting
         return self.ser.inWaiting()
 
@@ -81,10 +81,10 @@ class RS485:
         i = 0
         while i < len(msg):
             if msg[i] == 0xC0:
-                msg[i : i + 1] = b"\xdb\xdc"
+                msg[i: i + 1] = b"\xdb\xdc"
                 i = i + 1
             elif msg[i] == 0xDB:
-                msg[i : i + 1] = b"\xdb\xdd"
+                msg[i: i + 1] = b"\xdb\xdd"
                 i = i + 1
             i = i + 1
 
