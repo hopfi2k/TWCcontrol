@@ -128,7 +128,7 @@ class Kostal:
                 # open Modbus connection for reading
                 self.client = ModbusClient(self.serverIP, port=self.modbusPort, unit_id=self.unitID, auto_open=True)
             except ValueError:
-                self.debugLog(0, "Error connection to Kostal Inverter via Modbus")
+                self.debugLog(0, "Error connection to Kostal Inverter via Modbus!")
                 self.fetchFailed = True
                 return 0
 
