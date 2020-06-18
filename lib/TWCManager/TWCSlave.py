@@ -1022,9 +1022,9 @@ class TWCSlave:
         return self.lastAmpsOffered
 
     def setLifetimekWh(self, kwh):
-      self.lifetimekWh = kwh
+        self.lifetimekWh = kwh
 
     def setVoltage(self, pa, pb, pc):
-      self.voltsPhaseA = pa
-      self.voltsPhaseB = pb
-      self.voltsPhaseC = pc
+        self.voltsPhaseA = pa
+        self.voltsPhaseB = pb
+        self.voltsPhaseC = pc
