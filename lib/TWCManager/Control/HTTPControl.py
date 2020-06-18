@@ -38,8 +38,8 @@ class HTTPControl:
         self.status = self.configHTTP.get("enabled", False)
 
         # Unload if this module is disabled or misconfigured
-        if ((not self.status) or (int(self.httpPort) < 1)):
-          self.master.releaseModule("lib.TWCManager.Control","HTTPControl");
+        if (not self.status) or (int(self.httpPort) < 1):
+            self.master.releaseModule("lib.TWCManager.Control", "HTTPControl")
 
         if self.status:
             httpd = ThreadingSimpleServer(("", self.httpPort), HTTPControlHandler)
